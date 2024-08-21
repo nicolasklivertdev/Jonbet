@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    overflow: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #323b45;
+    position: fixed;
+    max-width: 100%;
+    width: 100%;
+    background-color: rgb(15, 25, 35);
+    color: white;
+    z-index: 10;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0.18rem;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgb(3, 106, 233);
+}
+
+.banner p {
+    color: white;
+}
+
+.subheader {
+    display: flex;
+    align-items: center;
+    margin-left: 70px;
+    padding: 14px 0;
+}
+
+.imgheader, .login {
+    margin-top: -1px;
+}
+
+.imgheader:hover {
+    cursor: pointer;
+}
+
+.login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 2rem;
+    gap: 2.5rem;
+    max-width: 100%;
+    width: 100%;
+}
+
+.entrar {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+}
+
+.entrar:hover {
+    cursor: pointer;
+}
+
+.login button {
+    padding: 11.4px 15px;
+    border: none;
+    border-radius: 21px;
+    outline: none;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: rgb(72, 255, 79);
+}
+
+.login button:hover {
+    cursor: pointer;
+}
+
+.scroll-container {
+    padding-bottom: 1rem;
+    position: absolute;
+    overflow-y: scroll;
+    top: 75px; 
+    left: 0;
+    right: 0;
+    bottom: -17.5px;
+    z-index: 1;
+}
+
+.scroll-container::-webkit-scrollbar {
+    width: 9px;
+    background-color: #1c1d2b;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background-color: #2c2f3d;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+    padding-right: 2.46rem;
+    padding-left: 2.46rem;
+    background-color: rgb(15, 25, 35);
+}
+
+.p1 {
+    display: flex;
+    margin-top: 1.25rem;
+}
+
+.p1 h1, .p1 p, .p1 form, form a {
+    color: white;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+}
+
+.title h1 {
+    margin-bottom: 1.28rem;
+    font-size: 47px;
+    line-height: 3.5rem;
+    max-width: 52.48%;
+    width: 100%;
+}
+
+.title p {
+    margin-bottom: 1.18rem;
+    font-size: 18px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    border-radius: 4px;
+    gap: 16px;
+    width: 311px;
+    background-color: rgb(26, 36, 45);
+}
+
+.email, .password, .cpf {
+    padding: 18px 16px;
+    border: 1px solid transparent;
+    border-radius: 100px;
+    background-color: #0f1923;
+}
+
+.email {
+
+}
+
+input {
+    display: flex;
+    align-items: center;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    background: transparent;
+    color: white;
+}
+
+input::placeholder {
+    color: #bcbfc7;
+}
+
+.password {
+
+}
+
+.cpf {
+    
+}
+
+form span {
+    color: rgb(72, 255, 79);
+}
+
+form span:hover {
+    cursor: pointer;
+}
+
+a:focus {
+    pointer-events: none;
+}
