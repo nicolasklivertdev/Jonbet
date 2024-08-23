@@ -262,6 +262,10 @@ form img {
     height: 40px;
 }
 
+form img:hover {
+    cursor: pointer;
+}
+
 .p1img {
     display: flex;
     align-items: center;
@@ -275,18 +279,156 @@ form img {
 .p2 {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    margin-top: 0.65rem;
+    padding-bottom: 5rem;
+    gap: 6rem;
 }
 
 .icon1, .icon2, .icon3 {
     display: flex;
-    
+    gap: 1.4rem;
 }
 
-.icon1 svg {
-    max-width: 100%;
-    width: 100%;
+.icon1img, .icon2img, .icon3img {
+    display: flex;
+    justify-content: center;
+    border-radius: 4px;
+    width: 55px;
+    height: 72.5px;
+    background-color: rgb(26, 36, 45);
 }
+
+.icon1 svg, .icon2 svg, .icon3 svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    padding: 12px;
+    border-radius: 4px;
+    background-color: rgb(72, 255, 79);
+}
+
+.icon1 p, .icon2 p, .icon3 p {
+    margin-top: 0.8rem;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.55rem;
+    max-width: 69%;
+    width: 100%;
+    color: white;
+}
+
+footer {
+    padding: 71px 78.5px;
+    background-color: #1a242d;
+}
+
+.f1 {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid #323b45;
+}
+
+.footertop {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footertop svg {
+    width: 157px;
+    height: 25px;
+}
+
+.footertop svg:hover {
+    cursor: pointer;
+}
+
+.footertitle {
+    margin-right: 0.75rem;
+    font-size: 14px;
+    color: white;
+}
+
+.footertop button {
+    display: flex;
+    align-items: center;
+    margin-top: 1px;
+    padding: 0 12px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    border: none;
+    border: 1px solid #323b45;
+    border-radius: 4px;
+    gap: 0.5rem;
+    background-color: rgb(49 58 66 / 50%);
+}
+
+.footertop button:hover {
+    cursor: pointer;
+}
+
+.flag {
+    width: 15px;
+    height: 15px;
+}
+
+.lang {
+    font-size: 12px;
+    color: #878991;
+}
+
+.arrow {
+    width: 8px;
+}
+
+.columns {
+    display: flex;
+    justify-content: center;
+    margin-top: 3.2rem;
+    text-align: center;
+    font-size: 14px;
+    line-height: 2.6rem;
+    gap: 27.3rem;
+}
+
+.c1, .c2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.c1 h4, .c1 a, .c2 h4, .c2 a {
+    color: white;
+} 
+
+.c1 h4, .c2 h4 {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.c1 a, .c2 a {
+    color: #878991;
+}
+
+.c1 a:hover, .c2 a:hover {
+    color: white;
+} 
+
+.f2 {
+    display: flex;
+    align-items: center;
+    padding-top: 1.55rem;
+    padding-bottom: 1.85rem;
+    border-bottom: 1px solid #323b45;
+    gap: 1.25rem;
+}
+
+.f2 img {
+    color: gray;
+}
+
+
 
 a:focus {
     pointer-events: none;
