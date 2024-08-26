@@ -93,6 +93,7 @@ header {
 
 .scroll-container {
     position: absolute;
+    overflow-x: hidden;
     overflow-y: scroll;
     top: 75px; 
     left: 0;
@@ -143,13 +144,19 @@ section {
     margin-bottom: 1.28rem;
     font-size: 47px;
     line-height: 3.5rem;
-    max-width: 86.48%;
+    max-width: 100%;
     width: 100%;
 }
 
 .title p {
+    max-width: 99%;
+    width: 100%;
     margin-bottom: 21px;
     font-size: 18px;
+}
+
+.P1img {
+    display: none;
 }
 
 form {
@@ -268,7 +275,8 @@ form img:hover {
 .p1img {
     display: flex;
     align-items: center;
-    margin-top: 8rem;
+    position: relative;
+    top: 8rem;
     max-width: 48%;
     width: 85%;
     height: 442px;
@@ -328,6 +336,7 @@ footer {
     flex-direction: column;
     padding-bottom: 1.25rem;
     border-bottom: 1px solid #323b45;
+
 }
 
 .footertop {
@@ -337,6 +346,7 @@ footer {
 }
 
 .footertop svg {
+    min-width: 157px;
     width: 157px;
     height: 25px;
 }
@@ -346,6 +356,7 @@ footer {
 }
 
 .footertitle {
+    white-space: nowrap;
     margin-right: 0.75rem;
     font-size: 14px;
     color: white;
@@ -390,24 +401,24 @@ footer {
     text-align: center;
     font-size: 14px;
     line-height: 2.6rem;
-    gap: 27.3rem;
 }
 
 .c1, .c2 {
     display: flex;
     flex-direction: column;
+    max-width: 50%;
+    width: 100%;
 }
 
-.c1 h4, .c1 a, .c2 h4, .c2 a {
-    color: white;
-} 
-
 .c1 h4, .c2 h4 {
+    white-space: nowrap;
     text-transform: uppercase;
     font-size: 12px;
+    color: white;
 }
 
 .c1 a, .c2 a {
+    white-space: nowrap;
     color: #8a90a2;
 }
 
@@ -497,32 +508,193 @@ a:focus {
     pointer-events: none;
 }
 
+@media screen and (max-width: 1135px) {
+    .f4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .f4contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding-right: 0.6rem;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 2.3rem;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 1022.99px) {
     .p1img {
-        margin-top: 15rem;
+        position: relative;
+        top: 15rem;
         max-width: 55%;
         height: 380px;        
     }   
 
     .title h1 {
         max-width: 100%;
+        width: 100%;
     }
 
     .p2 {
         gap: 2rem;
     }
+}
 
-    .f4 {
+@media screen and (max-width: 991px) {
+    section {
+        padding-top: 1.7rem;
+    }
+
+    .P1 {
+        margin-right: -4.32rem;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .title h1 {
+        font-size: 36px;
+        letter-spacing: 1px;
+        line-height: 2.9rem;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .p2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1.2rem;
+        gap: 1rem;
+    }
+
+    .icon1img, .icon2img, .icon3img {
+        width: 70px;
+        height: 72.2px;
+    }
+
+    .icon1 p, .icon2 p, .icon3 p {
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 962px) {
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-right: 1.8rem;
+        padding-left: 0;
+    }
+    
+    .P1 {
+        display: flex;
+        align-items: center;
+    }
+    
+    .title h1 {
+        text-align: center;
+    }
+
+    .title p {
+        display: flex;
+        justify-content: center;
+    }
+
+    .P1img {
+        display: flex;
+        justify-content: center;
+        margin-top: 0.7rem;
+        margin-bottom: 1.6rem;
+        max-width: 385px;
+        width: 100%;
+        height: 330px;
+    }
+
+    .p1img {
+        display: none;
+    }
+
+    .p2 {
+        padding-left: 2.24rem;
+    }
+    
+    .icon1, .icon2, .icon3 {
+        display: flex;
+        gap: 1.4rem;
+    }
+    
+    .icon1img, .icon2img, .icon3img {
+        display: flex;
+        justify-content: center;
+        border-radius: 4px;
+        width: 55px;
+        height: 72.2px;
+        background-color: rgb(26, 36, 45);
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .P1img {
+        max-width: 300px;
+        width: 100%;
+        height: 260px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .footertop {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .f4contact {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 100%;
+        width: 100%;
     }
+}
 
-    .f4title {
+@media screen and (max-width: 766px) {
+    .footertop {
         display: flex;
-        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .subheader {
+        margin-left: 40px;
     }
 
-    
+    footer {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
 
+    .f3 {
+        padding-left: 1rem;
+    }
 }
