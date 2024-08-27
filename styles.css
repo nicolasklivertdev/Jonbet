@@ -526,3 +526,12 @@ a:focus {
     
 
 }
+    .footertitle {
+        white-space: wrap;
+    }
+    
+    .f3 {
+        padding-left: 1rem;
+    }
+}
+
