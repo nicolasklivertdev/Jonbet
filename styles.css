@@ -694,6 +694,10 @@ a:focus {
         padding-left: 40px;
     }
 
+    .footertitle {
+        white-space: wrap;
+    }
+    
     .f3 {
         padding-left: 1rem;
     }
